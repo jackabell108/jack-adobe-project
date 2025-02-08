@@ -1,6 +1,6 @@
 {
   "name": "jack-adobe-project",
-  "version": "11.1.0",
+  "version": "1.0.0",
   "description": "Project for Adobe interview",
   "main": "index.js",
   "scripts": {
