@@ -34,4 +34,4 @@ npm test --coverage
 ```
 Test coverage must be at least 80% :[ or else
 
-The other endpoint is /metrics, this logs the requests by statuscode and requested integer
+The other endpoint is /metrics, this logs the requests by statuscode and requested integerg
