@@ -11,6 +11,7 @@ function App() {
   const [romanNumeral, setRomanNumeral] = React.useState<string>("");
   const [errorMessage, setErrorMessage] = React.useState<string>("");
 
+  //input needs to be scrubbed before it can be passed to the API
   const cleanInput = (uncleanedInteger: string | undefined) => {
     const value = parseInt(uncleanedInteger ?? "");
     if (!uncleanedInteger) {
@@ -30,7 +31,9 @@ function App() {
     }
   }
 
+  // Calls fetch to get roman numeral
   const updateRomanNumeral = async (untranslatedInteger: number | undefined) => {
+    //if user presses button before typing
     if (!untranslatedInteger) {
       setErrorMessage("A value must be entered!");
       return;

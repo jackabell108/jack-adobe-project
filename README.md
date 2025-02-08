@@ -19,3 +19,16 @@ Building and running for development is covered in the individual packages
 
 # REFERENCE FOR RULES
 https://solano.edu/ASTC/forms/math/Roman%20Numerals.pdf
+
+# Methodology
+I chose to design this in two packages, a front end and a backend, this is so the logic to create roman numerals can sit on one side of hte API while the frontend can fetch it easily. My idea behind my testing methodology was complete coverage. I wanted every line to get hit and no branches left out. Specifically, for the roman numeral file in the server, I wanted to test as many unique and more difficult numerals as possible.
+
+# Layout
+Two packages: roman-numeral-server and roman-numeral-ui, within those is a src folder with the logic and a test folder.
+
+# Dependencies
+UI: React Adobe Spectrum
+Testing: Jest
+React Framework: Create-react-app
+Server: Express
+Debugging and Emotional Support: ChatGPT
